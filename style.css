@@ -31,11 +31,30 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+.div-btn{
+    width: 70%;
+    height: 120px;
+    margin: -130px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.div-btn h5{
+    color: #21282E;
+    font-weight: bold;
+    font-size: 15px ;
+    margin: 10px 0px 0px 20px;
+}
 #close-btn{
     width: 100px;
     padding: 10px;
-    margin: 10px;
     cursor: pointer;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.788);
+    color: #FFFFFF;
+    border: none;
+    margin: 20px 0px 0px 30px;
 }
 .main{
     width: 100%;
