@@ -1,0 +1,887 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden ;
+}
+.winner{
+    width: 100%;
+    height: 85vh;
+    background-color: #21282e85;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.winner2{
+    width: 40vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.winner2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#close-btn{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    position: relative;
+}
+/* ------------ navbar ----------- */
+.navbar{
+    height: 112px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(238, 222, 222);
+}
+
+.nav-logo{
+    width: 110px;
+    height: 24px;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    padding: 32px;
+}
+
+img{
+    height: 45px;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 300px;;
+}
+
+ul li{
+    display: inline;
+    margin-left: 25px;
+    padding: 0px 4px;
+    font: 12px;
+    color: #21282E;
+    font-weight: 500px;
+    
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    padding: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.btn1{
+    background-color: #43A724;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.btn2{
+    color: #43A724;
+    border: 2px solid  #43A724;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 30px;
+   
+}
+
+/* ------------- hero-section ---------------- */
+
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    margin-bottom: 10rem;
+}
+
+.hero-h1{
+    font-size: 24px;
+    color: #21282E;
+    height: 40px;
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    display: inline;
+}
+
+#text-container {
+    position: relative;
+    top: 30px;  /* Adjust the position based on your layout */
+    left: 130px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #43A724;
+    width: 100%;  
+}
+
+
+#hero-para{
+    height: 30px;
+    color: #717275;
+    font-size: 20px;
+    position: relative;
+    left: 120px;
+    top: -110px;
+}
+
+.hero-image{
+    width: 110px;
+    height: 24px;
+    position: absolute;
+    right: 500px;
+    top: 140px;
+}
+
+.hero-image img{
+    height: 80vmin;
+}
+
+.hero-image2{
+    position: relative;
+    top: 50px;
+    left: -280px;
+}
+
+.hero-image2 img{
+    height: 11vmin;
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 150px;
+    left: -620px;
+}
+
+.job-btn{
+    height: 50px;
+    width: 170px;
+    padding: 8px 0px;
+    margin-right: -20px;
+    border: 2px solid #43A724;
+    border-radius: 25px;
+    color: #43A724;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#para1, #para2{
+    position: relative;
+    top: 60px;
+    left: -170px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #717275;
+}
+
+#para1{
+    margin-left: 30px;
+}
+
+.lms-btn, .apl-btn{
+    height: 50px;
+    width: 170px;
+    padding: 8px 0px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #43A724;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: -60px;
+}
+
+/* ----------- intro-section ------------ */
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack image and text vertically */
+    height: 40rem;
+    margin: 48px 0px 16px;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center;
+    margin-top: 170px;
+}
+
+.intro-img {
+    background-color: white;
+    border-radius: 50%; /* Make it fully circular */
+    height: 14vmin;
+    width: 14vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center image inside the div */
+    margin-top: -600px;
+}
+
+.intro-img img {
+    height: 11vmin;
+    width: auto; /* Maintain aspect ratio */
+}
+
+.info {
+    color: #21282E;
+    margin-top: 20px; /* Spacing between image and text */
+}
+
+.info h1 {
+    font-size: 48px;
+    margin-bottom: 105px;
+}
+
+.info p {
+    font-size: 18px;
+    margin-top: -70px;
+    margin-left: 140px;
+    width: 80%; /* Adjust text width for better readability */
+    line-height: 1.6;
+}
+
+#cli-int{
+    margin: 16px 16px 40px;
+    color:#43A724;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* ------------------- intern section ------ */
+.opportunities {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 55rem;
+    width: 100%;
+    position: relative;
+    background-color: #43A724;
+    margin-top: -20rem;
+}
+
+.opportunity {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    scroll-behavior: smooth;
+    margin: -110px 60px 0px 60px;
+}
+
+.opportunity::-webkit-scrollbar{
+    overflow-x: hidden;
+}
+
+.opportunity-box {
+    min-width: 25%;
+    height: 35rem;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.opportunity h1{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 30px;
+    align-items: left;
+}
+
+#head-1{
+    position: relative;
+    left: 100px;
+    
+}
+#head-2{
+    position: relative;
+    left: -40px;
+    top: 300px;
+}
+
+.opportunity-box img{
+    height: 11.4rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: -14px 0px 0px 0.2px;
+}
+
+.opportunity-box p {
+    font-size: 16px;
+    color: #717275;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.opportunity-box h1{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #21282E;
+}
+
+.apl-btn{
+    position: relative;
+    top: -20px;
+    left: 30px;
+    border-radius: 10px;
+}
+
+.scroll-btn {
+    background-color: #5a616891;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#scroll-lft {
+    left: 90px;
+}
+
+#scroll-rgt {
+    right: 90px;
+}
+
+#last-head{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 20vh;
+    left: 35%;
+}
+
+/* ---------- intern-month ---------- */
+
+.intern-month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 48px 128px 16px;
+    height: 80rem;
+}
+
+.intern-dtl {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intern-dtl h1 {
+    color: #21282E;
+    font-size: 48px;
+    margin-bottom: 105px;
+}
+
+.intern-dtl p {
+    font-size: 20px;
+    margin-top: -70px;
+    margin-left: 140px;
+    width: 80%; 
+    line-height: 1.6;
+    color:#717275;
+}
+
+#intern-btn{
+    padding: 8px;
+    margin: 30px 0px 45px 0px;
+    background-color: #43A724;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 500px;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top: -100px;
+    left: 0px;
+}
+
+.box-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 35rem;
+    position: relative;
+    top: -250px;
+}
+
+.box{
+    width: 30%;
+    height: 350px;
+    background-color: #FFFFFF;
+    padding: 20px 0px 15px;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.box-content img{
+    height: 12rem;
+    width: 100%;
+    margin-top: -20px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.box-content h1{
+    font-size: 23px;
+    font-weight: bold;
+    color: #21282E;
+    margin: 5px 0px 0px 10px;
+}
+
+.line1{
+    height: 1px;
+    width: 95%;
+    background-color: rgb(170, 165, 165);
+    margin: 30px 50px 40px 10px;
+}
+
+.box-btn{
+    background-color: #43A724;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 12px 30px 12px 30px;
+    border-radius: 7px;
+    border: none;
+    margin-left: 180px;
+}
+
+/* --------- blog section ---------- */
+.blog-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 54rem;
+    margin-top: 2rem;
+    background-color: #d2d3d64d;
+}
+
+.blog-heading {
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.blog-heading h3, h1{
+    color: #21282E;
+}
+
+.blog-heading h1{
+    font-size: 35px;
+}
+
+.blog-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    gap: 13px;
+    position: relative;
+    top: -250px;
+}
+
+.blog-box{
+    width: 22%;
+    height: 43rem;
+    background-color: #FFFFFF;
+    padding: 20px 0px 15px;
+    margin-top: 150px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.blog-content{
+    margin: 1rem;
+}
+
+.blog-content img{
+    height: 15rem;
+    width: 100%;
+    margin-top: -20px; 
+    margin-bottom: 15px;
+}
+
+.blog-content h1{
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.blog-content p{
+    line-height: 1.5rem; 
+    color: #717275;
+    font-size: 20px;
+}
+/* --------------- portal-section ----------- */
+.portal-section, .courses-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    margin-top: 20px;
+}
+
+.portal-img{
+    height: 20rem;
+    width: 36rem;
+    margin-top: 400px;
+    margin-left: -170px;
+}
+
+.portal-info, .courses-info{
+    text-align: left;
+    position: relative;
+    top: -170px;
+    left: 60px;
+}
+
+.portal-info h1, .lms-info h1, .courses-info h1, .job-info h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.portal-info h3, .lms-info h3, .courses-info h3, .job-info h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.portal-info p, .lms-info p, .courses-info p, .job-info p{
+    color:#717275;
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.portal-aspects, .courses-aspects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    position: relative;
+    top: -340px;
+    left: 280px;
+    height: 30rem;
+    width: 50%;
+}
+
+.portal-box, .lms-box, .courses-box, .job-box{
+    width: 30%;
+    height: 210px;
+}
+
+.portal-box i, .lms-box i, .courses-box i, .job-box i{
+    color:#43A724;
+    margin: 30px 0px 0px 5px;
+}
+
+.portal-box p , .lms-box p, .courses-box p, .job-box p{
+    margin: -50px 0px 0px 40px;
+    line-height: 1.2rem;
+    font-size: 15px;
+    color:#717275;
+}
+
+/* ---------- lms section -------- */
+
+.lms-section, .job-section{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+}
+
+.lms-info, .job-info{
+    position: relative;
+    top: -80px;
+    text-align: left;
+    left: 60px;
+}
+
+.lms-aspects, .job-aspects{
+    position: relative;
+    top: 400px;
+    left: -550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 30rem;
+    width: 50%;
+}
+
+.lms-img{
+   height: 55rem;
+   width: 45%;
+   position: relative;
+   top: -450px;
+   left: 340px;
+}
+
+/* ------- courses section -------- */
+.courses-section{
+    height: 63rem;
+}
+
+.courses-info{
+    text-align: left;
+    position: relative;
+    top: -220px;
+    left: 60px;
+}
+
+.courses-img{
+    height: 29rem;
+    width: 36rem;
+    margin-top: 350px;
+    margin-left: -110px;
+}
+
+/* ---------- job section -------- */
+
+.job-info{
+    position: relative;
+    top: -40px;
+}
+
+.job-img{
+    height: 55rem;
+    width: 45%;
+    position: relative;
+    top: -450px;
+    left: 340px;
+}
+
+/* ------- why section -------- */
+.why-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55rem;
+    padding: 24px;
+}
+
+.why-section h1{
+    position: relative;
+    top: -330px; 
+    left: 70px;
+    font-size: 2.5rem;
+}
+
+.vertical-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -450px;
+    top: 50px;
+    padding: 24px;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-envelope{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #43A724;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: -30px;
+    position: relative;
+    background-color: transparent;
+}
+
+.fa-envelope {
+    position: absolute;
+    top: 10px;
+    font-size: 17px;
+    color: #43A724;
+    z-index: 99;
+    /* opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: var(--delay, 0s);   */
+}
+
+/* .icon.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.line {
+    width: 1px;
+    height: 40px;
+    background-color: #43A724;
+    margin: 15px 0px -3px 0px;
+}
+
+.para1{
+    position: relative;
+    left: 220px;
+    top: 2px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.why-img{
+    height: 25rem;
+    position: relative;
+    top: -20px;
+    left: -100px;
+    border-radius: 10px;
+}
+
+/* Main container for the scroller */
+.scroller-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 32rem;
+    width: 100%;
+    position: relative;
+    background-color: #3b3c3f28;
+}
+.head-con {
+    position: absolute;
+    top: 20px;
+    left: 750px;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 100%; 
+}
+.head-con h1 {
+    font-size: 34px; 
+    color: #21282E; 
+    padding: 10px; 
+}
+/* Reviews container to hold all review boxes horizontally */
+.reviews {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    scroll-behavior: smooth;
+    margin: 100px 60px 0px 60px;
+    
+}
+.reviews::-webkit-scrollbar{
+    overflow-x: hidden;
+}
+/* Individual review box styling */
+.review-box {
+    min-width: 25%;
+    height: 17rem;
+    padding: 15px;
+    background-color: #21282E;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.review-box p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.review-box h4{
+    margin-left: -120px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.scroll-button {
+    background-color: #5a616891;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+#scroll-left {
+    left: 90px;
+}
+#scroll-right {
+    right: 90px;
+}
+.rights-section{
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.rights-section ul{
+    margin-left: 140px;
+    cursor: pointer;
+}
+.rights-section ul p{
+  font-size: 17px;
+  color: #21282E;
+  font-weight: bold;
+}
+.rights-section li{
+    font-size: 15px;
+    color: #21282E;
+    margin-left: -5px;
+}
+.rights-section img{
+    height: 2.5rem;
+    margin: 0px -30px 0px 290px;
+}
+
